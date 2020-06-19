@@ -1,0 +1,293 @@
+<!doctype html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>诗歌详情页 </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link header's CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!--picture-->
+    <link type="text/css" rel="stylesheet" href="css/jquery.flex-images.css" />
+    <!-- Themify Icons-->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+
+   
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<style>
+    @media (min-width: 992px){
+        .col-md-4 {
+            width: 24%;
+        }}
+        .like{ font-size:40px;  color:#ccc; cursor:pointer;}
+.cs{color:#f00;}
+p{
+	margin:20px auto;
+	text-indent:0em;
+}
+</style>
+<script>
+   window.onload=function() {
+        var oP = document.getElementById("p");
+        var oSpan =document.getElementById("span");
+        var oA = document.getElementById("a");
+        var str = oSpan.innerHTML;
+        var onOff = true;
+
+        oA.onclick = function () {
+            if ( onOff ) {
+                oSpan.innerHTML = str.substring(0, 120);  //获取前18个字符
+                oA.innerHTML = '>>展开';  //收起后按钮文字变为展开
+            } else {
+                oSpan.innerHTML = str;
+                oA.innerHTML = '>>收缩';
+            }
+            onOff = !onOff;  //每点击一次按钮取反
+        };
+    };
+
+</script>
+<body>
+<!-- header -->
+<div class="header">
+    <div class="container">
+        <div class="w3layouts_logo">
+            <a href="homepage.html"><h1 style="font-family:楷体;">诗词DIY<span>交流平台</span></h1></a>
+        </div>
+        <div class="w3_search">
+            <form action="#" method="post">
+                <input type="text" name="Search" placeholder="搜索" required="">
+                <input type="submit" value="Go">
+            </form>
+        </div>
+        <div class="w3l_sign_in_register">
+
+            <div  style="position:absolute;top:2%;right:18%">									<!--我  收藏-->
+                <a href="#"> <img src="images\mine.png"style="width:70px;height:70px"/></a>
+
+            </div>
+
+            <ul>
+                <li><a href="denglu.html" style="position:absolute;top:3%;right:5%;">登录/注册</a></li>
+                <a href="#"style="position:absolute;top:10%;right:7%;"><h5 style="font-family:宋体;color:black;">关于我们</h5></a>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- //header -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 2px solid #FF8D1B" >
+    <a class="navbar-brand" href="homepage.html">首页</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav">
+            <li>
+            </li>
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">明信片<span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="#"aria-haspopup="true">我的收藏</a>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    诗词分类
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="contain1">
+<!--抬头-->
+<h1 class="pomehead">山行</h1>
+    <h4 class="author1"><a href="#">[唐]</a>  <a href="#">杜牧</a></h4>
+    <buttun><p class="like" style="position:absolute;left:65%;top:27%">&#10084;</p></buttun>
+
+<!--图片布局-->
+<div style="max-width:908px;margin:30px auto;margin-left:10px;padding:0 20px 10px;">
+    <div id="demo1" class="flex-images">
+        <div class="item" data-w="219" data-h="180"><img src="images/img_1.jpg"></div>
+        <div class="item" data-w="279" data-h="180"><img src="images/img_2.jpg"></div>
+        <div class="item" data-w="270" data-h="180"><img src="images/img_3.jpg"></div>
+        <div class="item" data-w="270" data-h="180"><img src="images/img_7.jpg"></div>
+        <div class="item" data-w="147" data-h="180"><img src="images/img_5.jpg"></div>
+        <div class="item" data-w="276" data-h="180"><img src="images/img_6.jpg"></div>
+        <div class="item" data-w="276" data-h="180"><a href="#" ><img src="images/更多.png" title="查看更多图片"></a></div>
+    </div>
+</div>
+    <!--诗-->
+    <div class="pomehead">
+    <p>
+        <h2>远上寒山石径斜，白云生处有人家。</h2>
+    </p>
+        <br>
+    <p>
+        <h2>停车坐爱枫林晚，霜叶红于二月花。</h2>
+    </p>
+
+    <br>
+    <br>
+    </div>
+    <div class="fenlei">
+    <span>分类标签:<a href="#" class="biaoqian">描写秋天</a>  <a href="#" class="biaoqian">小学</a></span>
+    </div>
+    <div style="margin-top: 5%;">
+    <hr ></div>
+    <div>
+        <h3 class="pomehead">白话译文：</h3>
+        <p class="pomehead1">弯曲的石头小路远远地伸至深秋的山巅，在白云升腾的地方隐隐约约有几户人家。
+ 停下马车来是因为喜爱深秋枫林的晚景，霜染后枫叶那鲜艳的红色胜过二月春花。</p>
+    </div>
+    <div>
+        <h3 class="pomehead">诗词赏析：</h3>
+        <p class="pomehead1">诗歌通过诗人的感情倾向，以枫林为主景，绘出了一幅色彩热烈、艳丽的山林秋色图。远上秋山的石头小路，首先给读者一个远视。
+            山路的顶端是白云缭绕的地方。路是人走出来的，因此白云缭绕而不虚无缥缈，寒山蕴含着生气，“白云生处有人家”一句就自然成章。
+            然而这只是在为后两句蓄势，接下来诗人明确地告诉读者，那么晚了，我还在山前停车，只是因为眼前这满山如火如荼，胜于春花的枫叶。
+            与远处的白云和并不一定看得见的人家相比，枫林更充满了生命的纯美和活力</p>
+    </div>
+    <br>
+</div>
+<button style="position:absolute;top:30%;left:75%" type="button" class="btn btn-dark">上传明信片</button>
+<div class="contain2" style="position:relative;top:0%;">
+    <img class="pic2" src="images/22.png" alt="作者"/>
+    <h3 class="author2">杜牧</h3>
+    <br>
+    <p id="p" style="padding-left: 15px;padding-right: 15px;">&nbsp;&nbsp;<span id="span">杜牧（803年－约852年），字牧之，号樊川居士，汉族，京兆万年（今陕西西安）人。
+        杜牧是唐代杰出的诗人、散文家，是宰相杜佑之孙，杜从郁之子。唐文宗大和二年26岁中进士，授弘文馆校书郎。
+        后赴江西观察使幕，转淮南节度使幕，又入观察使幕，理人国史馆修撰，膳部、比部、司勋员外郎，黄州、池州、睦州刺史等职。
+        因晚年居长安南樊川别墅，故后世称“杜樊川”，著有《樊川文集》。杜牧的诗歌以七言绝句著称，内容以咏史抒怀为主，其诗英发俊爽，多切经世之物，在晚唐成就颇高。
+        杜牧人称“小杜”，以别于杜甫，"大杜“。与李商隐并称“小李杜”。</span><a id="a" href="javascript:;">>>收缩</a></p>
+</div>
+
+<div class="contain3" style="position:relative;top:50px">
+<div style="color: #1a1a1a">推荐诗词</div>
+    <br>
+    <p style="text-align: center">出塞（<a href="#" style=""> 唐</a>·<a href="#" style="">王昌龄</a>）</p><br>
+        <p style="text-align: center">秦时明月汉时关，万里长征人未还。<br>
+        但使龙城飞将在，不教胡马度阴山。</p><a href="#" style="position:relative;margin-top: -10px;margin-left: 260px;">详情</a>
+    <hr>
+    <p style="text-align: center">出塞（<a href="#" style=""> 唐</a>·<a href="#" style="">王昌龄</a>）</p><br>
+    <p style="text-align: center">秦时明月汉时关，万里长征人未还。<br>
+        但使龙城飞将在，不教胡马度阴山。</p><a href="#" style="position:relative;margin-top: -10px;margin-left: 260px;">详情</a>
+</div>
+
+
+
+<div class="contain5">
+    <div style="color: #1a1a1a">相关明信片</div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+            <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="images/img_2.jpg" alt="Image" class="img-responsive">
+            </figure>
+            <div class="fh5co-text">
+                <a href="javascript:0;" class="cd-popup-trigger0"><h2>山行</h2>
+                    <p>远上寒山石径斜，白云深处有人家。<br>停车坐爱枫林晚，霜叶红于二月花。</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+            <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="images/img_3.jpg" alt="Image" class="img-responsive">
+            </figure>
+            <div class="fh5co-text">
+                <a href="javascript:0;" class="cd-popup-trigger0"><h2>山行</h2>
+                    <p>远上寒山石径斜，白云深处有人家。<br>停车坐爱枫林晚，霜叶红于二月花。</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+            <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="images/img_3.jpg" alt="Image" class="img-responsive">
+            </figure>
+            <div class="fh5co-text">
+                <a href="javascript:0;" class="cd-popup-trigger0"><h2>山行</h2>
+                    <p>远上寒山石径斜，白云深处有人家。<br>停车坐爱枫林晚，霜叶红于二月花。</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+            <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="images/img_3.jpg" alt="Image" class="img-responsive">
+            </figure>
+            <div class="fh5co-text">
+                <a href="javascript:0;" class="cd-popup-trigger0"><h2>山行</h2>
+                    <p>远上寒山石径斜，白云深处有人家。<br>停车坐爱枫林晚，霜叶红于二月花。</p></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" style="position:relative;margin-bottom: 40px;margin-left: 1330px;">查看更多</a>
+
+</div>
+<script typet="text/javascript" src="js/jquery.min.js"></script>
+<script>
+    $(function () {            
+        $(".like").click(function () {
+            $(this).toggleClass('cs');                
+        })
+    })
+</script>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.flex-images.js"></script>
+<script type="text/javascript">
+    $('#demo1').flexImages({
+        rowHeight: 140,     //设置每行图片的固定高度
+        container:'.item',  //元素模块
+        truncate: false     //默认设置即可
+    });
+</script>
+
+</html>

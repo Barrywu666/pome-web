@@ -1,0 +1,389 @@
+<!doctype html>   
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> POMEWEB </title> 
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+        <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="css\swiper.min.css">
+        <!-- Link header's CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- Theme style  -->
+ 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+<!-- Demo styles -->
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<style>
+  html, body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top:180px;
+  }
+  .swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    background: rgb(238, 237, 237);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+</style>
+
+  </head>
+  <body>
+   <!-- header -->
+	<div class="header">
+      <div class="container">
+        <div class="w3layouts_logo">
+          <a href="homepage.html"><h1>POME<span>WEB</span></h1></a>
+        </div>
+        <div class="w3_search">
+          <form action="#" method="post">
+            <input type="text" name="Search" placeholder="搜索" required="">
+            <input type="submit" value="Go">
+          </form>
+        </div>
+        <div class="w3l_sign_in_register">
+        
+              <div  style="position:absolute;top:2%;right:18%">									<!--我  收藏-->
+              <a href="#"> <img src="images\mine.png"style="width:70px;height:70px"/></a> 
+             
+           </div>
+ 
+           <ul>
+            <li><a href="denglu.html" style="position:absolute;top:3%;right:5%;">登录/注册</a></li>
+            <a href="#"style="position:absolute;top:10%;right:7%;"><h5 style="font-family:宋体;color:black;">关于我们</h5></a>  
+          </ul>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  <!-- //header -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 2px solid #FF8D1B" >
+      <a class="navbar-brand" href="#">首页</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         
+        <ul class="navbar-nav">
+            <li>  
+              </li>
+          <li class="nav-item active">
+            <a class="navbar-brand" href="#">明信片<span class="sr-only">(current)</span></a>
+          </li>
+          <li>  
+            </li>
+            <li>  
+              </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="#"aria-haspopup="true">我的收藏</a>
+          </li>
+          <li>  
+            </li>
+            <li>  
+              </li>
+              <li>  
+                </li>
+          <li class="nav-item dropdown">
+            <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             诗词分类
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+<!-- Swiper start -->
+  <div class="swiper-container" >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1 </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">
+            <div class="card" style="width:400px;height:360px;">
+                <a href="#"> <img id="img" onmouseover="bigger(this)" onmouseout="smaller(this)"src="images\card1.jpg"  style="width:400px;height:360px;" class="card-img-top" alt="..."></a>
+             </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card"style="width:400px;height:360px;" >
+                <a href="#"> <img id="img" onmouseover="bigger(this)" onmouseout="smaller(this)"src="images\card2.jpg"   class="card-img-top" alt="..."></a>
+             </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card" style="width:400px;height:360px;">
+                <a href="#"> <img id="img" onmouseover="bigger(this)" onmouseout="smaller(this)"src="images\card3.jpg"  style="width:400px;height:360px;" class="card-img-top" alt="..."></a>
+             </div>
+        </div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+        <div class="swiper-slide">Slide 11</div>
+        <div class="swiper-slide">Slide 12</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <script > 
+      
+      var img = document.getElementById('img'); 
+      
+      function bigger(obj){  obj.style.width = '400px';  obj.style.height = '380px'; } 
+      
+      function smaller(obj){  obj.style.width = '400px';  obj.style.height = '360px'; }     
+      </script>
+     <!-- Swiper JS -->
+  <script src="js\swiper.min.js"></script>
+  
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</div>
+<!-- Swiper end-->
+<div class="gtco-section border-bottom"style="position:absolute;top:60%;left:15%">
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>猜你喜欢</h2>
+        <p>世界不止眼前的苟且，还有诗与远方。</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/img_2.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>早春呈水部张十八员外</h2>
+            <p>天街小雨润如酥，草色遥看近却无。<br> 最是一年春好处，绝胜烟柳满皇都。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/img_3.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>江南春</h2>
+            <p>千里莺啼绿映红，水村山郭酒旗风。 <br>南朝四百八十寺，多少楼台烟雨中。 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/img_7.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>江雪</h2>
+            <p>千山鸟飞绝，万径人踪灭。<br> 孤舟蓑笠翁，独钓寒江雪。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/img_1.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <a href="javascript:0;" class="cd-popup-trigger0"><h2>山行</h2>
+              <p>远上寒山石径斜，白云深处有人家。<br>停车坐爱枫林晚，霜叶红于二月花。</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/img_5.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>望庐山瀑布</h2>
+            <p>日照香炉生紫烟，遥看瀑布挂前川。<br> 飞流直下三千尺，疑是银河落九天。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="fh5co-project-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/img_6.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <a href="javascript:0;" class="cd-popup-trigger0"><h2>梅花</h2>
+              <p>墙角数枝梅，凌寒独自开。 <br>遥知不是雪，为有暗香来。</p></a>
+          </div>
+        </div>
+      </div>
+
+
+
+  </div>
+    </div>
+
+</div>
+
+
+
+   <!--弹框-->
+   <div class="cd-popup">
+     <div class="cd-popup-container">
+       <div class="cd-buttons">
+
+         <div class="carousel">
+           <div class="btn btn-back hidden">
+             <i class="fas fa-arrow-left"></i>
+             <i class="fas fa-chevron-left left-indicator"></i>
+           </div>
+           <div class="viewbox" >
+             <div class="track" >
+               <div class="slide active" >
+                 <img class="images"  src="images/img_1.jpg" />
+               </div>
+               <div class="slide"  >
+                 <img class="images"   src="images/img_2.jpg" />
+               </div>
+             </div>
+           </div>
+
+           <div class="btn btn-next">
+             <i class="fas fa-arrow-right"></i>
+             <i class="fas fa-chevron-right right-indicator"></i>
+           </div>
+           <div class="nav-indicator">
+             <div class="dot active"></div>
+             <div class="dot"></div>
+             <div class="dot"></div>
+           </div>
+
+
+         <img class="pic" src="images/n.jpg" alt="头像"/>
+           <div class="name" style="font-family: Arial; font-size: 20px;    margin-left: 470px; padding-top: 100px;color: #c7254e" >SUNNY</div>
+         </div>
+         <div class="caption " style="display: inline-block;margin-left: 415px;">缓缓的枫叶像思念
+           <a href="#" target="_blank">@wkorea</a>
+           <a href="#" target="_blank">@kaws</a>
+           <a href="#" target="blank">
+             <span>...查看评论</span></a>
+         </div>
+         <div class="poem " style="display: inline-block;    margin-top: 100px;
+    margin-left: 40px;">
+           <h2>山行</h2>
+           <br/>
+           <p>远上寒山石径斜，白云深处有人家。<br>停车坐爱枫林晚，霜叶红于二月花。</p>
+         </div>
+
+
+       </div>
+
+       <a href="#0" class="cd-popup-close">close</a>
+     </div>
+   </div>
+   <script type="text/javascript">
+       /*弹框JS内容*/
+       jQuery(document).ready(function($){
+           //打开窗口
+           $('.cd-popup-trigger0').on('click', function(event){
+               event.preventDefault();
+               $('.cd-popup').addClass('is-visible');
+               //$(".dialog-addquxiao").hide()
+           });
+           //关闭窗口
+           $('.cd-popup').on('click', function(event){
+               if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+                   event.preventDefault();
+                   $(this).removeClass('is-visible');
+               }
+           });
+           //ESC关闭
+           $(document).keyup(function(event){
+               if(event.which=='27'){
+                   $('.cd-popup').removeClass('is-visible');
+               }
+           });
+       });
+   </script>
+   <script src='js/TimelineMax.min.js'></script>
+   <script src='js/TweenMax.min.js'></script>
+   <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>

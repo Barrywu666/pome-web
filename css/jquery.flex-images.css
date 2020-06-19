@@ -1,0 +1,6 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+
+.flex-images{overflow:hidden;}
+.flex-images .item{float:left;margin:4px;border:1px solid #eee;box-sizing:content-box;overflow:hidden;position:relative; }
+.flex-images .item img{display:block;width:auto;height:100%;}

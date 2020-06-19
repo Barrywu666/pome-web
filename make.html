@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title> 搜索页面 </title> 
+    <!-- Bootstrap CSS -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="wPaint-master/inc/jquery.ui.core.min.js"></script>
+  <script type="text/javascript" src="wPaint-master/inc/jquery.ui.widget.min.js"></script>
+  <script type="text/javascript" src="wPaint-master/inc/jquery.ui.mouse.min.js"></script>
+  <script type="text/javascript" src="wPaint-master/inc/jquery.ui.draggable.min.js"></script>
+  
+
+	
+	
+	<!-- wColorPicker -->
+	<link rel="Stylesheet" type="text/css" href="wPaint-master/inc/wColorPicker.css" />
+	<script type="text/javascript" src="wPaint-master/inc/wColorPicker.js"></script>
+	
+	<!-- wPaint -->
+	<link rel="Stylesheet" type="text/css" href="wPaint-master/wPaint.css" />
+	<script type="text/javascript" src="wPaint-master/wPaint.js"></script>
+	
+	<link rel="stylesheet" href="bootstrap\bootstrap-4.3.1-dist\css\bootstrap.min.css" >
+
+    
+        <!-- Link header's CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- Theme style  -->
+
+  
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+	 <!-- header -->
+	 <div class="header">
+			<div class="container">
+			  <div class="w3layouts_logo">
+				<a href="homepage.html"><h1 style="font-family:楷体;">诗词DIY<span>交流平台</span></h1></a>
+			  </div>
+			  <div class="w3_search">
+				<form action="#" method="post">
+				  <input type="text" name="Search" placeholder="搜索" required="">
+				  <input type="submit" value="Go">
+				</form>
+			  </div>
+			  <div class="w3l_sign_in_register">
+			  
+					<div  style="position:absolute;top:2%;right:18%">									<!--我  收藏-->
+					<a href="#"> <img src="images\mine.png"style="width:70px;height:70px"/></a> 
+				   
+				 </div>
+	   
+				 <ul>
+				  <li><a href="denglu.html" style="position:absolute;top:3%;right:5%;">登录/注册</a></li>
+				  <a href="#"style="position:absolute;top:10%;right:7%;"><h5 style="font-family:宋体;color:black;">关于我们</h5></a>  
+				</ul>
+			  </div>
+			  <div class="clearfix"> </div>
+			</div>
+		  </div>
+		<!-- //header -->
+	  
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:8%;border-bottom:2px solid #FF8D1B" >
+			<a class="navbar-brand" href="#"><strong>首页</strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		   
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			   
+			  <ul class="navbar-nav">
+				  <li>  
+					</li>
+				<li class="nav-item active">
+				  <a class="navbar-brand" href="#"><strong>明信片制作</strong><span class="sr-only">(current)</span></a>
+				</li>
+				<li>  
+				  </li>
+				  <li>  
+					</li>
+				<li class="nav-item">
+				  <a class="navbar-brand" href="#"aria-haspopup="true"><strong>我的收藏</strong></a>
+				</li>
+				<li>  
+				  </li>
+				  <li>  
+					</li>
+					<li>  
+					  </li>
+				<li class="nav-item dropdown">
+				  <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  <strong>诗词分类</strong>
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something here</a>
+				  </div>
+				</li>
+			  </ul>
+			</div>
+		  </nav> 
+		  <!-- 要将父布局的position设置为relative，父布局将无法包裹input -->
+		  <div id="sss" onmouseover = "over(this)" onmouseout="out(this)"style="position:relative;background-image:url(images/img_4.jpg);width:100%;height:400px">
+				<h1 style="font-family:华文行楷; ">图片识诗</h1>
+				<form action="/test/" id="domeform" method="POST" enctype="multipart/form-data">
+					<img id="upload" src="images/更多.png " style="position:absolute;left:30%;width:500px;height:300px;border:solid 2px black;border-radius: 30px;" />
+					<input type="button"  onclick="document.getElementById('file1').click()"  style="position:absolute;left:40%;top:85%;width:50px;height:50px;background:url(images/file1.png)" />
+					<input type="file" id="file1" name="images1"  onchange="showImg1(this)"  style="position:absolute;left:30%;top:85%; display:none;" />
+					<input type="button"  onclick="document.getElementById('up1').click()"  style="position:absolute;left:50%;top:85%;width:50px;height:50px;background:url(images/up.png)" />				
+					<input type="submit" id="up1"  value="上传"style="position:absolute;left:50%;top:85%;display:none;" />
+				</form>
+			</div>
+			<script type="text/javascript">
+				function showImg1(input) {
+					var file = input.files[0];
+					var reader = new FileReader()
+					// 图片读取成功回调函数
+					reader.onload = function(e) {
+						document.getElementById('upload').src=e.target.result
+					}
+					reader.readAsDataURL(file)
+				}
+			</script>  
+
+<div id="sss" onmouseover = "over(this)" onmouseout="out(this)"style="position: relative;top:20%;background-image:url(images/img_4.jpg);width:100%;height:500px">
+	<h1 style="font-family:华文行楷; ">制作明信片</h1>
+
+	<table><tr>
+		<td>
+			<div id="wPaint" style="position:absolute;left:20%;top:5%; width:800px; height:400px; background:#CACACA; border:solid black 2px;"></div>
+		</td><td>
+			<img id="canvasImage" src=""/>
+		</td>
+		<img id="img" src="">
+		<input type="button"  onclick="document.getElementById('file').click()"  style="position:absolute;left:45%;top:86%;width:50px;height:50px;background:url(images/file1.png)" />
+		<input id="file" type="file"onchange="showImg2()" style="position:absolute;left:30%;top:5%;display:none">	
+	</tr></table>
+</div>		
+	<script>
+	
+		var wp = $("#wPaint").wPaint({
+			image: "",
+			drawDown: function(e, mode){ $("#canvasDown").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); },
+			drawMove: function(e, mode){ $("#canvasMove").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); },
+			drawUp: function(e, mode){ $("#canvasUp").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); }
+		}).data('_wPaint');
+
+    function showImg2() {
+			
+			let fileObj = document.getElementById('file').files[0]  //获取文件对象
+			let reader = new FileReader();   //新建一个FileReader对象
+			reader.readAsDataURL(fileObj);   //将读取的文件转换成base64格式
+    		reader.onload = function(e) {
+		// 通过 reader.result 来访问生成的 DataURL 
+   				T = e.target.result;		 		
+				$("#wPaint").wPaint("image", T);
+	
+			}
+	
+        }		
+	</script>
+	<div id="sss" onmouseover = "over(this)" onmouseout="out(this)"style="position:relative;;background-image:url(images/img_4.jpg);width:100%;height:400px">
+		<h1 style="font-family:华文行楷; ">发布明信片</h1>
+		<form action="/test/" id="domeform" method="POST" enctype="multipart/form-data">
+			<!--第一张图片!-->
+			<img id="upload2" src="images/更多.png " style="position:absolute;left:10%;width:500px;height:300px;border:solid 2px black;border-radius: 30px;" />
+			<input type="button"  onclick="document.getElementById('file2').click()"  style="position:absolute;left:25%;top:85%;width:50px;height:50px;background:url(images/file1.png)" />
+			<input type="file"  multiple id="file2" name="images2"  onchange="showImg3(this)"  style="position:absolute;left:30%;top:85%; display:none;" />
+							
+			<!--第二张图片!-->
+			<img id="upload3" src="images/更多.png " style="position:absolute;left:50%;width:500px;height:300px;border:solid 2px black;border-radius: 30px;" />
+			<input type="button"  onclick="document.getElementById('file3').click()"  style="position:absolute;left:65%;top:85%;width:50px;height:50px;background:url(images/file1.png)" />
+			<input type="file" id="file3" name="images3"  onchange="showImg4(this)"  style="position:absolute;left:30%;top:85%; display:none;" />
+			<!--上传!-->
+			<input type="button"  onclick="document.getElementById('up2').click()"  style="position:absolute;left:45%;top:85%;width:50px;height:50px;background:url(images/up.png)" />					
+			<input type="submit" id="up2"  value="上传"style="position:absolute;left:45%;top:85%;display:none;" />
+		</form>
+	</div>
+	<script type="text/javascript">
+		function showImg3(input) {
+			var file = input.files[0];
+			var reader = new FileReader()
+			// 图片读取成功回调函数
+			reader.onload = function(e) {
+				document.getElementById('upload2').src=e.target.result
+			}
+			reader.readAsDataURL(file)
+		}
+			function showImg4(input) {
+			var file = input.files[0];
+			var reader = new FileReader()
+			// 图片读取成功回调函数
+			reader.onload = function(e) {
+				document.getElementById('upload3').src=e.target.result
+			}
+			reader.readAsDataURL(file)
+		}
+	</script>  
+	<script>
+		var x = document.getElementById('sss');
+			function over(obj){
+		
+				obj.style.backgroundImage="url(images/630.jpg)" ;
+				obj.style.backgroundRepeat="repeat"
+			
+			}
+			function out(obj){			
+			 obj.style.backgroundImage="url(images/img_4.jpg)";
+			 obj.style.backgroundRepeat="repeat"
+			}
+			
+			
+		</script>
+	<!-- jQuery -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+    
+	
+</body>
+</html>
